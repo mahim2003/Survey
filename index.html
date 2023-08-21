@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking time out to fill this form</p>
+  <form id="survey-form" method="post" action="https://example.com">
+    <fieldset>
+      <label id="name-label">Name
+        <input id="name" type="text" placeholder="Enter your Name" required></input>
+      </label>
+      <label id="email-label">Email
+        <input id="email" type="email" placeholder="Enter your Email" required></input>
+      </label>
+      <label id="number-label">Age 
+      <input id="number" type="number" min="1" max="130" placeholder="Enter your age">
+        </input>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label id="pl">What is your favourite Programming Language
+        <select id="dropdown">
+          <option value="">Select one</option>
+          <option value="1">Java</option>
+          <option value="2">Python</option>
+          <option value="3">C/C++</option>
+          <option value="4">Other</option>
+        </select>
+      </label>
+      <label>What is your current GPA?</label>
+      <label id="lt2">
+        <input value="1" id="lt2" type="radio" name="GPA"/>Less Than 2.0
+      </label>
+      <label id="b23">
+        <input value="2" id="b23" type="radio" name="GPA"/>
+    2.0 - 3.0</label>
+      <label id="mt3">
+        <input value="3" id="mt3" type="radio" name="GPA"/>
+    More Than 3.0</label>
+      <label id="days">What days of the week do you practice programming?
+      </label>
+      <label>Monday
+        <input value="1" type="checkbox">
+      </label>
+      <label>Tuesday
+        <input value="2" type="checkbox">
+      </label>
+      <label>Wednesday
+        <input value="3" type="checkbox">
+      </label>
+      <label>Thursday
+        <input value="4" type="checkbox">
+      </label>
+      <label>Friday
+        <input value="5" type="checkbox">
+      </label>
+      <label>Saturday
+        <input value="6" type="checkbox">
+      </label>
+      <label>Sunday
+        <input value="7"  type="checkbox">
+      </label>
+    </fieldset>
+    <fieldset>
+      <label id="feed">Any Feedback?
+        <textarea id="feed" name="feed" rows="3" cols="30" placeholder="Please leave feeback if you wish to">
+        </textarea>
+      </label>
+      <input type="submit" id="submit" value="Submit"/>
+    </fieldset>
+  </form>
+</body>
+</html>
